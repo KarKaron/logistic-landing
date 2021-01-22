@@ -13,27 +13,24 @@
   <header id="top">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <div class="container">
-        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#topNavi" aria-controls="topNavi" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="openMenu" class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <button class="navbar-toggler mr-3" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <a href="/" class="navbar-brand mr-auto" style="font-family: SF Compact Display Medium; font-size: 24px;">
+        <a href="/" class="navbar-brand mr-auto" style="font-family: SF Compact Display; font-size: 24px;">
           ДИСПЕТЧЕРСКАЯ.SU
         </a>
         <div class="collapse navbar-collapse justify-content-center" id="topNavi">
           <ul class="navbar-nav ml-auto smooth-scroll navbarMenu">
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-1">
               <a href="#about" class="nav-link waves-effect waves-light">Мы предлагаем</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-1">
               <a href="#work" class="nav-link waves-effect waves-light">Как это работает</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-1">
               <a href="#partners" class="nav-link waves-effect waves-light">Компании-партнёры</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-1">
               <a href="#contact" class="nav-link waves-effect waves-light">Контакты</a>
             </li>
           </ul>
@@ -46,59 +43,61 @@
 
     <section id="introUp">
       <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-        <div id="bannerUp" class="animated bounceInUp"></div>
+        <div id="bannerUp" class="animated bounceInUp">
+          <img src="/img/top.png" alt="ДИСПЕТЧЕРСКАЯ.SU">
+        </div>
         <div id="backUp"></div>
-        <div id="alertUp" class="animated bounceInDown">
-          <div>Даём заработать<br>на грузоперевозках</div>
+        <div id="alertUp" class="animated bounceInDown d-flex align-items-center justify-content-center">
+          <div>Даём заработать на грузоперевозках</div>
         </div>
         <div id="textOrder">Заказы для водителей<br>на своём грузовом ТС</div>
         <div id="textOrder1">доход</div>
         <div id="textPrice">100 000 - 350 000 ₽</div>
-        <div id="orderButton" data-toggle="modal" data-target="#modalOrder">
-          <span>ПОЛУЧИТЬ ЗАКАЗ</span>
+        <div id="orderButton" class="animated fadeInUpBig d-flex align-items-center justify-content-center">
+          <div>ПОЛУЧИТЬ ЗАКАЗ</div>
         </div>
       </div>
     </section>      
       
     <section id="about">
-      <div class="container" id="bannerAbout">
-        <div class="row text-center">
-          <div class="col-12">
-            <h2>Мы предлагаем</h2>
-            <div class="row aboutList">
-              <div class="col-md-6 mb-5">
-                <div class="aboutDiv d-flex">
-                  <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
-                  <div>Стабильный поток заказов, даже на январь и февраль</div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5">
-                <div class="pl-5 ml-4 d-flex">
-                  <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
-                  <div>Гибкий график - сами решаете когда ехать</div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5">
-                <div class="pl-5 ml-4 d-flex">
-                  <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
-                  <div>100% загрузка вашей машины</div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5">
-                <div class="pl-5 ml-4 d-flex">
-                  <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
-                  <div>Персональный диспетчер 24/7</div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5">
-                <div class="pl-5 ml-4 d-flex">
-                  <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
-                  <div>Гарантированные, регулярные выплаты</div>
-                </div>
-              </div>
+      <div class="container-fluid">
+        <div id="bannerAbout">
+          <h2>Мы предлагаем</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row aboutList">
+          <div class="col-md-6 mb-5">
+            <div class="aboutDiv d-flex">
+              <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
+              <div>Стабильный поток заказов, даже на январь и февраль</div>
             </div>
           </div>
-        </div>    
+          <div class="col-md-6 mb-5">
+            <div class="aboutDiv d-flex">
+              <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
+              <div>Гибкий график - сами решаете когда ехать</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="aboutDiv d-flex">
+              <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
+              <div>100% загрузка вашей машины</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="aboutDiv d-flex">
+              <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
+              <div>Персональный диспетчер 24/7</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="aboutDiv d-flex">
+              <div><img class="mr-3" src="img/point.png" alt="Точка"></div>
+              <div>Гарантированные, регулярные выплаты</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -106,7 +105,9 @@
       <div class="container">
         <div class="row d-flex d-flex align-items-center justify-content-center mb-5">
           <div class="col-md-6 text-center">
-            <div id="workBox"></div>
+            <div id="workBox">
+              <img src="img/box.png" alt="Как это работает">
+            </div>
           </div>
           <div class="col-md-6 text-center">
             <h2>Как это работает</h2>
@@ -139,7 +140,7 @@
           </div>
         </div>
       </div>
-      <div id="workBaner">
+      <div id="workBaner" class="d-flex align-items-center justify-content-center">
         <div>Вы наш партнёр, а не наемный водитель</div>
       </div>
     </section>
@@ -154,16 +155,16 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <img src="img/Card1.svg" alt="СБЕР" class="wow flipInX">
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <img src="img/Card2.svg" alt="ПОЧТА РОССИИ" class="wow flipInX">
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <img src="img/Card3.svg" alt="Alcogol Service Technologies" class="wow flipInX">
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <img src="img/Card4.svg" alt="РУССКАЯ КАРТОШКА" class="wow flipInX">
           </div>
         </div>
@@ -171,22 +172,22 @@
     </section>
 
     <section id="contact">
-      <div class="container" id="bannerContact">
-        <div class="row">
-          <div class="col-12">
-            <h2>Контакты</h2>
-          </div>
-        </div>
+      <div class="container-fluid">
+        <div id="bannerContact"></div>
+        <div class="container">
+          <h2>Контакты</h2>
         <div class="row blockContact">
-          <div class="col-md-6 mb-5">
+          <div class="col-md-6 mb-3">
             <a href="tel:+74951289763" class="white-text d-flex align-items-center">
               <img class="mr-3" src="img/phone.svg" alt="Позвоните">+7 495 128-97-63
             </a>
           </div>
-          <div class="col-md-6 mb-5 text-md-right">
+          <div class="col-md-6 mb-3">
             <img class="mr-3" src="img/map.svg" alt="Позвоните">г. Москва, ул. Енисейская 46, к2
           </div>
         </div>
+      </div>
+
       </div>
     </section>
 
@@ -202,52 +203,110 @@
     <div>©  ДИСПЕТЧЕРСКАЯ.SU</div>
   </footer>
 
-  <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrder" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h4 class="modal-title w-100 font-weight-bold">Начни получать<br>заказы на перевозку</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+  <div id="modalMenu" class="d-none">
+    <div id="modalMenuBody" class="d-flex align-items-center justify-content-center">
+      <img id="closeMenu" src="img/close.png" alt="Закрыть">
+      <ul class="list-unstyled">
+        <li>
+          <a href="#about" class="menu-link waves-effect waves-light">Мы предлагаем</a>
+        </li>
+        <li>
+          <a href="#work" class="menu-link waves-effect waves-light">Как это работает</a>
+        </li>
+        <li>
+          <a href="#partners" class="menu-link waves-effect waves-light">Компании-партнёры</a>
+        </li>
+        <li>
+          <a href="#contact" class="menu-link waves-effect waves-light">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modalOrder" class="d-none">    
+    <div id="modalOrderBody" class="d-flex align-items-center justify-content-center">
+      <img id="closeOrder" src="img/close.png" alt="Закрыть">
+      <form id="formModalZapros">
+        <div>
+          <h4 class="mb-4 text-center">Начни получать<br>заказы на перевозку</h4>
+          <div class="mb-3">
+            <input type="text" id="nameModal" class="form-control validate" name="name" required placeholder="Имя">
+          </div>
+          <div class="mb-3">
+            <input type="tel" id="phoneModal" class="form-control" name="phone" placeholder="Телефон">
+          </div>
+          <div class="mb-3">
+            <input type="text" id="tonnageModal" class="form-control" name="tonnage" placeholder="Грузоподъемность">
+          </div>
+          <div class="mb-5">
+            <input type="text" id="typeModal" class="form-control" name="type" placeholder="Тип будки">
+          </div>
+          <div class="mb-3 d-flex justify-content-center">
+            <button type="submit" id="btnModal" class="orderButton" value="1">
+              ПОЛУЧИТЬ ЗАКАЗ
+            </button>
+          </div>    
         </div>
-        <form id="formModalZapros">
-          <div class="modal-body mx-3">
-            <div class="mb-3">
-              <input type="text" id="nameModal" class="form-control validate" name="name" required placeholder="Имя">
-            </div>
-            <div class="mb-3">
-              <input type="tel" id="phoneModal" class="form-control" name="phone" placeholder="Телефон">
-            </div>
-            <div class="mb-3">
-              <input type="text" id="tonnageModal" class="form-control" name="tonnage" placeholder="Грузоподъемность">
-            </div>
-            <div class="mb-3">
-              <input type="text" id="typeModal" class="form-control" name="type" placeholder="Тип будки">
-            </div>
-            <div class="mb-3 d-flex justify-content-center">
-              <button type="submit" id="btnModal" class="orderButton" value="1">
-                ПОЛУЧИТЬ ЗАКАЗ
-              </button>
-            </div>    
+      </form>
+      <div id="orderSave" class="d-none">
+        <div class="mb-3 text-center">
+          <h4 class="mb-4">Заявка отправлена!</h4>
+          <div class="mb-4" style="font-size: 24px;">
+            Свяжемся с вами<br>в ближайшее время
           </div>
-        </form>    
-        <!-- <div id="confModal" class="modal-footer justify-content-center">
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="checkModal" checked>
-            <label class="custom-control-label" for="checkModal"><span>Я ознакомлен и принимаю правила <a href="#" title="Правила обработки персональных данных конфиденциальности" target="_blank">политики конфиденциальности</a></span></label>     
-          </div>
-        </div> -->
-      </div>
+          <img class="mb-5" src="img/ok.png" alt="Заявка отправлена!">
+          <button type="button" id="btnSave" class="orderButton">
+            OK
+          </button>
+        </div>    
+      </div>  
     </div>
   </div>
   
   <!-- <a href="#top" class="scrollup">Наверх</a> -->
   
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script type="text/javascript" src="js/new.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mdb.min.js"></script>
+  <script src="js/new.js"></script>
+  <script>
+
+    // Открытие меню
+    document.querySelector('#openMenu').addEventListener('click', () => {
+      document.querySelector('#modalMenu').classList.remove('d-none');
+    });
+    document.querySelector('#closeMenu').addEventListener('click', () => {
+      document.querySelector('#modalMenu').classList.add('d-none');
+    });
+    document.querySelectorAll('#modalMenuBody .menu-link').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('#modalMenu').classList.add('d-none');
+      });  
+    });
+
+    // Открытие запроса
+    document.querySelector('#orderButton').addEventListener('click', () => {
+      document.querySelector('#modalOrder').classList.remove('d-none');
+    });
+    document.querySelector('#closeOrder').addEventListener('click', () => {
+      document.querySelector('#modalOrder').classList.add('d-none');
+    });
+
+    // Отправка заказа
+    document.querySelector('#btnModal').addEventListener('click', event => {
+      event.preventDefault();
+      document.querySelector('#formModalZapros').classList.add('d-none');
+      document.querySelector('#closeOrder').classList.add('d-none');
+      document.querySelector('#orderSave').classList.remove('d-none');
+    });
+    document.querySelector('#orderSave').addEventListener('click', () => {
+      document.querySelector('#formModalZapros').classList.remove('d-none');
+      document.querySelector('#closeOrder').classList.remove('d-none');
+      document.querySelector('#orderSave').classList.add('d-none');
+      document.querySelector('#modalOrder').classList.add('d-none');
+    });
+
+  </script>
 </body>
 </html>    

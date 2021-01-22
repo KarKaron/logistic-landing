@@ -1,5 +1,7 @@
 @import url(css/bootstrap.min.css);
 @import url(css/mdb.min.css);
+@import url(css/media.css);
+@import url(css/modal.css);
 
 body {
   font-family: SF Compact Display Thin;
@@ -15,41 +17,52 @@ header {
   z-index: 1;
 } 
 
-@media screen and (max-width: 992px) {
-  .navbar:not(.top-nav-collapse) {
-    background: rgba(57, 1, 121, 0.8);
-  }
-  .navbar {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12) !important;
-  }
-}
-
 .top-nav-collapse {
   background: rgba(57, 1, 121, 0.8);
 }
 
 .navbarMenu {
   font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
   font-size: 18px;
-  line-height: 21px;
   color: #FFFFFF;
+}
+
+.navbar-toggler {
+  margin-left: -20px!important;
 }
 
 #introUp {
   background: linear-gradient(180deg, #390179 1.91%, #6464C8 98.03%);
-  min-height: 1024px;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
-#alertUp {
-  width: 678px;
-  height: 197px;
+#bannerUp {
   position: absolute;
-  left: calc(50% - 678px/2 + 4px);
-  top: 395px;
+  width: 50%;
+  top: 1%;
+  z-index: 3;
+}
+
+#bannerUp img {
+  width: 100%;
+}
+
+#backUp {
+  position: absolute;
+  height: 40%;
+  left: 0;
+  right: 0;
+  top: 18%;
+  background: linear-gradient(180deg, rgba(255, 225, 95, 0) 17.9%, #FFE15F 57.29%, rgba(255, 225, 95, 0) 100%);
+  z-index: 2;
+}
+
+#alertUp {
+  position: absolute;
+  width: 35%;
+  height: 20%;
+  top: 35%;
   background: linear-gradient(92.85deg, rgba(85, 205, 191, 0.83) 4.8%, rgba(46, 129, 255, 0.71151) 48.6%, rgba(98, 56, 187, 0.88) 97.22%);
   border: 0.5px solid #FFFFFF;
   box-sizing: border-box;
@@ -59,58 +72,16 @@ header {
 }
 
 #alertUp div {
-  position: absolute;
-  left: 2.77%;
-  right: 3.11%;
-  top: 11.34%;
-  bottom: 12.37%;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 67px;
+  font-family: SF Compact Display;
+  font-size: 36px;
   text-align: center;  
   color: #FFFFFF;
 }
 
-#bannerUp {
-  position: absolute;
-  width: 983px;
-  height: 821px;
-  left: calc(50% - 983px/2 - 23.5px);
-  top: -114px;
-  background: url('img/top.png');
-  z-index: 3;
-}
-
-@media screen and (max-width: 768px) {
-  #bannerUp {
-    width: 100%;
-    top: -16px;
-  }
-}
-
-#backUp {
-  position: absolute;
-  height: 357px;
-  left: 0%;
-  right: 0%;
-  top: 222px;
-  background: linear-gradient(180deg, rgba(255, 225, 95, 0) 17.9%, #FFE15F 57.29%, rgba(255, 225, 95, 0) 100%);
-  z-index: 2;
-}
-
 #textOrder {
   position: absolute;
-  width: 678px;
-  height: 104px;
-  left: calc(50% - 678px/2);
-  top: 613px;
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 48px;
-  line-height: 105.34%;
+  top: 56%;
+  font-size: 28px;
   text-align: center;
   color: #FFFFFF;
   z-index: 2;
@@ -118,15 +89,9 @@ header {
 
 #textOrder1 {
   position: absolute;
-  width: 272px;
-  height: 22px;
-  left: calc(50% - 272px/2);
-  top: 745px;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
+  top: 70%;
+  font-family: SF Compact Display;
+  font-size: 20px;
   text-align: center;
   color: #FFFFFF;
   z-index: 2;
@@ -134,15 +99,9 @@ header {
 
 #textPrice {
   position: absolute;
-  width: 678px;
-  height: 71px;
-  left: calc(50% - 678px/2);
-  top: 779px;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 86px;
+  top: 73%;
+  font-family: SF Compact Display;
+  font-size: 62px;
   text-align: center;
   letter-spacing: -0.03em;
   color: #FFFFFF;
@@ -153,83 +112,56 @@ header {
   position: absolute;
   width: 272px;
   height: 56px;
-  left: calc(50% - 272px/2);
-  top: 904px;
+  top: 88%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background: #FFE15F;
   border-radius: 8px;
   z-index: 4;
+  cursor: pointer;
 }
 
-#orderButton span {
-  position: absolute;
-  left: 5.88%;
-  right: 5.88%;
-  top: 26.79%;
-  bottom: 26.79%;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
+#orderButton div {
+  font-family: SF Compact Display;
   font-size: 18px;
-  line-height: 21px;
-  text-align: center;
   color: #343330;
-  cursor: pointer;
 }
 
 #about {
   position: relative;
   min-height: 1024px;
   height: 100%;
+  width: 100%;
   background: linear-gradient(167.63deg, #F2F4F4 46.72%, #EDEEE7 110.37%);
-}
-
-#about h2 {
-  position: absolute;
-  width: 678px;
-  height: 57px;
-  left: calc(50% - 678px/2);
-  top: 130px;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 57px;
   text-align: center;
-  color: #343330;
 }
 
 #bannerAbout {
   position: absolute;
-  left: -3.03%;
-  right: -3.03%;
-  top: 0%;
+  left: 0;
+  right: 0;
+  top: 0;
   bottom: 33.79%;
   background: url('img/about.png') no-repeat center center;
   background-size: cover; 
   -webkit-background-size: cover;
 }
 
-.aboutList {
-  position: relative;
-  top: 633px; 
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 29px;
+#about h2 {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  font-family: SF Compact Display;
+  font-size: 48px;
+  text-align: center;
   color: #343330;
-  text-align: left;
 }
 
-@media screen and (max-width: 576px) {
-  #about {
-    min-height: 861px;
-  }
-  
-  .aboutList {
-    top: 361px;
-  }
+.aboutList {
+  position: relative;
+  top: 700px; 
+  font-size: 24px;
+  color: #343330;
+  text-align: left;
 }
 
 .aboutDiv {
@@ -239,39 +171,29 @@ header {
 
 #work {
   position: relative;
-  min-height: 1024px;
   height: 100%;
   background: linear-gradient(180deg, #390179 1.91%, #6464C8 98.03%);
-}
-
-@media screen and (max-width: 992px) {
-  #work {
-    min-height: 1300px;
-  }
+  padding-bottom: 144px;
 }
 
 #workBox {
   width: 359px;
   height: 359px;
   margin: 0 auto;
-  background: url('img/box.png');
+}
+
+#workBox img {
+  width: 100%;
 }
 
 #work h2 {
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
+  font-family: SF Compact Display;
   font-size: 48px;
-  line-height: 57px;
   color: #FFFFFF;
 }
 
 .workList {
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
   font-size: 24px;
-  line-height: 29px;
   color: #FFFFFF;
 }
 
@@ -280,18 +202,9 @@ header {
   margin: 0 3rem;
 }
 
-@media screen and (max-width: 768px) {
-  .workDiv {
-    padding-left: 0;
-    margin: 0;
-  }
-}
-
 #workBaner {
-  position: absolute;
   height: 64px;
   width: 100%;
-  top: calc(50% - 64px/2 + 336px);
   background: linear-gradient(92.85deg, rgba(85, 205, 191, 0.83) 4.8%, rgba(46, 129, 255, 0.71151) 48.6%, rgba(98, 56, 187, 0.88) 97.22%);
   border: 0.5px solid #FFFFFF;
   box-sizing: border-box;
@@ -299,43 +212,11 @@ header {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 992px) {
-  #workBaner {
-    top: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .workDiv {
-    padding-left: 0;
-    margin: 0;
-  }
-}
-
 #workBaner div {
-  position: absolute;
-  left: 11.46%;
-  right: 11.46%;
-  top: 18.75%;
-  bottom: 29.69%;
-  font-family: SF Compact Display Medium; 
-  font-style: normal;
-  font-weight: bold;
+  font-family: SF Compact Display; 
   font-size: 28px;
-  line-height: 33px;
   text-align: center;
   color: #FFFFFF;
-}
-
-@media screen and (max-width: 576px) {
-  #workBaner div {
-    left: 2.77%;
-    right: 3.11%;
-    top: 11.34%;
-    bottom: 12.37%;
-    font-size: 18px;
-    line-height: 21px;
-  }
 }
 
 #partners {
@@ -346,33 +227,22 @@ header {
 }
 
 #partners h2 {
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 67px;
+  font-family: SF Compact Display;
+  font-size: 48px;
   text-align: center;
   color: #343330;
   margin-top: 123px;
 }
 
 #partners h3 {
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
   font-size: 36px;
-  line-height: 43px;
   text-align: center;
   color: #343330;
   margin-top: 125px;
 }
 
 #partners h4 {
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
   font-size: 24px;
-  line-height: 29px;
   text-align: center;
   color: #343330;
   margin-top: 69px;
@@ -388,11 +258,13 @@ header {
   min-height: 700px;
   height: 100%;
   background: linear-gradient(180deg, #390179 1.91%, #6464C8 98.03%);
+  text-align: center;
 }
 
 #bannerContact {
   position: absolute;
-  right: 10.28%;
+  width: 100%;
+  right: 0;
   top: 0;
   bottom: 21.15%;
   background: url('img/contacts.png') no-repeat center center;
@@ -400,27 +272,15 @@ header {
 
 #contact h2 {
   position: absolute;
-  width: 384px;
-  height: 67px;
-  left: calc(50% - 384px/2 - 268px);
   top: 110px;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 67px;
+  font-family: SF Compact Display;
+  font-size: 48px;
   color: #FFFFFF;
 }
 
 .blockContact {
-  width: 100%;
-  position: absolute;
-  top: 569px;
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
+  padding-top: 569px;
   font-size: 24px;
-  line-height: 29px;  
   color: #FFFFFF;
 }
 
@@ -429,11 +289,7 @@ footer {
   min-height: 120px;
   height: 100%;
   background: linear-gradient(180deg, #390179 1.91%, #6464C8 98.03%);
-  font-family: SF Compact Display Thin;
-  font-style: normal;
-  font-weight: 100;
   font-size: 24px;
-  line-height: 29px;
   text-align: center;  
   color: #FFFFFF;
 }
@@ -444,11 +300,8 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background: #FFE15F;
   border-radius: 8px;
-  font-family: SF Compact Display Medium;
-  font-style: normal;
-  font-weight: bold;
+  font-family: SF Compact Display;
   font-size: 18px;
-  line-height: 21px;
   text-align: center;
   color: #343330;
   cursor: pointer;
@@ -464,11 +317,16 @@ footer {
   font-weight: normal;
   src: local('SF Compact Display Thin'), url('font/sf-compact-display-thin-58646eb43a785.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'SF Compact Display';
+  src: local('SF Compact Display'), url('font/SF-Compact-Display-Bold.ttf') format('truetype');
+}
   
 
 @font-face {
   font-family: 'SF Compact Display Medium';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src: local('SF Compact Display Medium'), url('font/sf-compact-display-medium-5864711817c30.woff') format('woff');
 }
