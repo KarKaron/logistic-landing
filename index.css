@@ -143,19 +143,18 @@ header {
 
 #bannerAbout {
   position: absolute;
-  left: 0;
+  width: 100%;
   right: 0;
   top: 0;
   bottom: 33.79%;
   background: url('img/about.png') no-repeat center center;
-  background-size: cover; 
-  -webkit-background-size: cover;
+  /* background-size: cover; 
+  -webkit-background-size: cover; */
 }
 
 #about h2 {
-  position: absolute;
+  position: relative;
   top: 130px;
-  width: 100%;
   font-family: SF Compact Display;
   font-size: 48px;
   text-align: center;
@@ -164,7 +163,7 @@ header {
 
 .aboutList {
   position: relative;
-  top: 700px; 
+  top: 563px; 
   font-size: 24px;
   color: #343330;
   text-align: left;
