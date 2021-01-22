@@ -17,6 +17,12 @@ header {
   z-index: 1;
 } 
 
+.navbar {
+  background: rgba(57, 1, 121, 0.8);
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+}
+
 .top-nav-collapse {
   background: rgba(57, 1, 121, 0.8);
 }
