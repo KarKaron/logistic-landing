@@ -13,9 +13,9 @@
   
   <header id="top">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-      <div class="container">
+      <div class="container d-flex align-items-center">
         <button id="openMenu" class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
+          <img src="img/menu.svg" alt="Открыть меню">
         </button>
         <a href="/" class="navbar-brand mr-auto" style="font-family: SF Compact Display; font-size: 24px;">
           ДИСПЕТЧЕРСКАЯ.SU
@@ -155,7 +155,23 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-12">
+            <div class="owl-carousel owl-theme partners">
+              <div>
+                <img src="img/Card1.svg" alt="1">
+              </div>
+              <div>
+                <img src="img/Card2.svg" alt="2">
+              </div>
+              <div>
+                <img src="img/Card3.svg" alt="3">
+              </div>
+              <div>
+                <img src="img/Card4.svg" alt="4">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
             <img src="img/Card1.svg" alt="СБЕР" class="wow flipInX">
           </div>
           <div class="col-lg-3 col-md-6">
@@ -167,7 +183,7 @@
           <div class="col-lg-3 col-md-6">
             <img src="img/Card4.svg" alt="РУССКАЯ КАРТОШКА" class="wow flipInX">
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -219,6 +235,9 @@
           <a href="#contact" class="menu-link waves-effect waves-light">Контакты</a>
         </li>
       </ul>
+      <div id="orderModalButton" class="d-flex align-items-center justify-content-center">
+        <div>ПОЛУЧИТЬ ЗАКАЗ</div>
+      </div>
     </div>
   </div>
 
@@ -269,6 +288,8 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/mdb.min.js"></script>
   <script src="js/new.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/slider.js"></script>
   <script>
 
     // Открытие меню
@@ -286,6 +307,15 @@
 
     // Открытие запроса
     document.querySelector('#orderButton').addEventListener('click', () => {
+      document.querySelector('#modalOrder').classList.remove('d-none');
+    });
+    document.querySelector('#closeOrder').addEventListener('click', () => {
+      document.querySelector('#modalOrder').classList.add('d-none');
+    });
+
+    // Открытие запроса в модальном окне
+    document.querySelector('#orderModalButton').addEventListener('click', () => {
+      document.querySelector('#modalMenu').classList.add('d-none');
       document.querySelector('#modalOrder').classList.remove('d-none');
     });
     document.querySelector('#closeOrder').addEventListener('click', () => {

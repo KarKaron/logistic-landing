@@ -1,9 +1,5 @@
 @media screen and (max-width: 1024px) {
 
-  #alertUp {
-    width: 50%!important;
-  }
-
   #bannerUp {
     width: 75%!important;
     top: 10%!important;
@@ -34,10 +30,6 @@
     min-height: 1300px!important;
   }
 
-  #alertUp {
-    width: 70%!important;
-  }
-
   #bannerUp {
     width: 100%!important;
   }
@@ -52,11 +44,10 @@
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 550px) {
 
   #alertUp {
     width: 95%!important;
-    top: 30%!important;
   }
   
   #alertUp div {
@@ -72,16 +63,16 @@
   }
 
   #textOrder {
-    top: 52%!important;
-    font-size: 20px!important;
+    font-size: 26px!important;
   }
 
   #textOrder1 {
-    top: 65%!important;
-    font-size: 16px!important;
+    top: 70%!important;
+    font-size: 18px!important;
   }
 
   #textPrice {
+    top: 76%!important;
     font-size: 32px!important;
   }
   

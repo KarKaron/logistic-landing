@@ -3,29 +3,6 @@ $(function() {
     /* Эффекты MDB при появлении */
     new WOW().init();
     
-    /* Отключаем кнопку отправки */
-    $("#checkModal").change(function() {
-        if($(this).prop("checked")===false) {
-            $("#btnModal").prop("disabled", true);
-        } else {
-            $("#btnModal").prop("disabled", false);
-        }
-    });
-    $("#checkCall").change(function() {
-        if($(this).prop("checked")===false) {
-            $("#btnCall").prop("disabled", true);
-        } else {
-            $("#btnCall").prop("disabled", false);
-        }
-    });
-    $("#checkForm").change(function() {
-        if($(this).prop("checked")===false) {
-            $("#btnForm").prop("disabled", true);
-        } else {
-            $("#btnForm").prop("disabled", false);
-        }
-    });
-    
     /* Кнока наверх */
     $(window).scroll(function(){
         // if ($(this).scrollTop() > 100) {
@@ -40,7 +17,7 @@ $(function() {
                 'top' : 'auto'
             });
         } 
-        if ($(document).scrollTop() < 250) {
+        if ($(document).scrollTop() < 50) {
             $('#orderButton').css({
                 'position': 'absolute',
                 'bottom' : 'auto',
