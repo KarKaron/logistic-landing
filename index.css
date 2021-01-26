@@ -138,6 +138,10 @@ input {
   z-index: 2;
 }
 
+#textPrice #textPriceRub {
+  font-family: 'SF Compact Display Thin'!important;
+}
+
 #orderButton,
 #orderModalButton {
   position: absolute;

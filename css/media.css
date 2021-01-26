@@ -38,6 +38,10 @@
     text-align: left!important;
   }
 
+  #partners {
+    min-height: 1200px;
+  }
+
   #workBaner div {
     font-size: 20px!important;
   }
