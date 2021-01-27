@@ -10,20 +10,20 @@ $(function() {
         // } else {
         //     $('.scrollup').fadeOut();
         // }
-        if ($(document).scrollTop() > 50) {
-            $('#orderButton').css({
-                'position': 'fixed',
-                'bottom' : '5%',
-                'top' : 'auto'
-            });
-        } 
-        if ($(document).scrollTop() < 50) {
-            $('#orderButton').css({
-                'position': 'absolute',
-                'bottom' : 'auto',
-                'top' : '88%'
-            });
-        }
+        // if ($(document).scrollTop() > 50) {
+        //     $('#orderButton').css({
+        //         'position': 'fixed',
+        //         'bottom' : '5%',
+        //         'top' : 'auto'
+        //     });
+        // } 
+        // if ($(document).scrollTop() < 50) {
+        //     $('#orderButton').css({
+        //         'position': 'absolute',
+        //         'bottom' : 'auto',
+        //         'top' : '88%'
+        //     });
+        // }
     }); 
     $('.scrollup').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);

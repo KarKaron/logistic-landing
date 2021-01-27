@@ -38,6 +38,14 @@
     text-align: left!important;
   }
 
+  #formModalZapros {
+    margin-top: 250px!important;
+  }
+
+  #orderSave {
+    margin-top: 330px!important;
+  }
+
   #partners {
     min-height: 1200px;
   }
@@ -58,35 +66,114 @@
     font-size: 26px!important;
   }
 
-  #contact h2 {
-    top: 50px!important;
-  }
-  
-  h2 {
-    font-size: 28px!important;
+  #bannerContact {
+    top: 5.28%!important;
+    bottom: 70.16%!important;
+    background-size: 125%!important;
+    height: 320px!important;
   }
 
+  .blockContact {
+    padding: 375px 0 100px 0!important;
+  }
+
+  #contact {
+    min-height: auto!important;
+    /* height: 100vh!important; */
+  }
+
+  #contact h2 {top: 50px!important;}
+
+  #contact .container {
+    padding: 0!important;
+  }
+
+  #formModalZapros h4 {
+    font-size: 28px!important;
+    line-height: 33px!important;
+    margin-top: 22px!important;
+    text-align: center!important;
+  }
+  
+  footer div {
+    padding: 50px 0 140px 0;
+  }
+
+  h2 {
+    font-size: 28px!important;
+    text-align: left!important;
+  }
+
+  h3 {
+    font-size: 24px!important;
+    text-align: left!important;
+  }
+
+  h4 {
+    font-size: 18px!important;
+    text-align: left!important;
+    line-height: 21px!important;
+  }
+
+  #mapAddress span {
+    font-weight: 100!important;
+    font-size: 24px!important;
+    line-height: 29px!important;
+    display: block!important;
+  }
+
+  #orderSave h4 {
+    font-size: 28px!important;
+    line-height: 33px!important;
+    margin-top: 102px!important;
+    text-align: center!important;
+  }
+
+  #partners {
+    /* height: 100vh!important; */
+    min-height: auto!important;
+    padding-bottom: 100px;
+  }
+
+  #partners h2 {margin-top: 70px!important;}
+  #partners h3 {margin-top: 16px!important;}
+  #partners h4 {margin-top: 28px!important;}
+
   #textOrder {
-    font-size: 26px!important;
+    font-weight: 100!important;
+    font-size: 24px!important;
+    line-height: 29px!important;
   }
 
   #textOrder1 {
     top: 70%!important;
     font-size: 18px!important;
+    line-height: 21px!important;
   }
 
   #textPrice {
     top: 76%!important;
     font-size: 32px!important;
+    line-height: 38px!important;
+    letter-spacing: -0.03em!important;
   }
   
   #workBox {
+    margin-top: 64px!important;
     width: 300px!important;
     height: 300px!important;
   }
 
+  #workBaner {
+    border-radius: 0!important;
+  }
+
   #workBaner div {
     font-size: 18px!important;
+  }
+
+  #workBaner div span {
+    display: block!important;
   }
 
 }

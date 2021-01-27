@@ -44,21 +44,71 @@
 
     <section id="introUp">
       <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-        <div id="bannerUp" class="animated bounceInUp">
+        <!-- class="animated bounceInUp" -->
+        <div id="bannerUp">
           <img src="img/top.png" alt="ДИСПЕТЧЕРСКАЯ.SU">
         </div>
         <div id="backUp"></div>
-        <div id="alertUp" class="animated bounceInDown d-flex align-items-center justify-content-center">
-          <div>Даём заработать<br>на грузоперевозках</div>
+        <!-- animated bounceInDown -->
+        <div id="alertUp" class="d-flex align-items-center justify-content-center">
+          <div>
+            <div>Даём заработать</div>
+            <div>на грузоперевозках</div>      
+          </div>
+          <div id="alertUpShadow"></div>
         </div>
         <div id="textOrder">Заказы для водителей<br>на своём грузовом ТС</div>
         <div id="textOrder1">доход</div>
-        <div id="textPrice">100 000 - 350 000 <span id="textPriceRub">₽</span></div>
-        <div id="orderButton" class="animated fadeInUpBig d-flex align-items-center justify-content-center">
+        <div id="textPrice">70 000 - 350 000 <span id="textPriceRub">₽</span></div>
+        <!-- animated fadeInUpBig -->
+        <div id="orderButton" class="d-flex align-items-center justify-content-center">
           <div>ПОЛУЧИТЬ ЗАКАЗ</div>
         </div>
       </div>
-    </section>      
+    </section>
+    
+    <section id="fastOrders">
+      <div class="container">
+        <h2>Срочные заказы</h2>
+        <h4>Нужны водители</h3>
+        <div class="row" id="fastOrdersCard">
+          <div class="col-6 px-0 d-flex justify-content-end">
+            <div class="cardOrder" style="width: 350px; height: 336px; margin-right: 15px;">
+              <div class="cardTitle">
+                Водитель с рефрижератором +4 +6
+              </div>
+              <div class="cardBody">
+                <p>Работа для водителей с рефрижератором (+4 +6) на новый проект!</p>
+                <p><strong>Ставки:</strong><br>
+                  1,5т - 6000 руб. за рейс<br>
+                  3т - 7500 руб. за рейс<br>
+                  5т - 9000 руб. за рейс
+                </p>
+                <p>Развоз молочной продукции по Москве, в удобном для вас районе по удобному графику!</p>
+                <p>Возможно несколько рейсов за день.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 px-0">
+            <div class="cardOrder" style="width: 350px; height: 336px; margin-left: 15px;">
+              <div class="cardTitle">
+                Водитель с грузовым а/м 1т-1,5т Реф +2+6 (Видное)
+              </div>
+              <div class="cardBody">
+                <p>Работа для водителей с рефрижератором (+4 +6) на новый проект!</p>
+                <p><strong>Ставки:</strong><br>
+                  1,5т - 6000 руб. за рейс<br>
+                  3т - 7500 руб. за рейс<br>
+                  5т - 9000 руб. за рейс
+                </p>
+                <p>Развоз молочной продукции по Москве, в удобном для вас районе по удобному графику!</p>
+                <p>Возможно несколько рейсов за день.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
       
     <section id="about">
       <div class="container-fluid">
@@ -141,7 +191,7 @@
         </div>
       </div>
       <div id="workBaner" class="d-flex align-items-center justify-content-center">
-        <div>Вы наш партнёр, а не наемный водитель</div>
+        <div><span>Вы наш партнёр,</span> <span>а не наемный водитель</span></div>
       </div>
     </section>
       
@@ -195,11 +245,12 @@
           <div class="row blockContact">
             <div class="col-md-6 mb-3">
               <a href="tel:+74951289763" class="white-text d-flex align-items-center">
-                <img class="mr-3" src="img/phone.svg" alt="Позвоните">+7 495 128-97-63
+                <img class="mr-2" src="img/phone.svg" alt="Позвоните">+7 495 128-97-63
               </a>
             </div>
-            <div class="col-md-6 mb-3">
-              <img class="mr-3" src="img/map.svg" alt="Позвоните">г. Москва, ул. Енисейская 46, к2
+            <div class="col-md-6 mb-3 white-text d-flex align-items-center">
+              <img class="mr-3" src="img/map.svg" alt="Позвоните">
+              <div id="mapAddress"><span>г. Москва,</span> <span>ул. Енисейская 46, к2</span></div>
             </div>
           </div>
         </div>
@@ -219,9 +270,12 @@
   </footer>
 
   <div id="modalMenu" class="d-none">
-    <div id="modalMenuBody" class="d-flex align-items-center justify-content-center">
+    <div id="modalMenuBody" class="d-flex justify-content-center">
       <img id="closeMenu" src="img/close.png" alt="Закрыть">
       <ul class="list-unstyled">
+        <li>
+          <a href="#fastOrders" class="menu-link waves-effect waves-light">Срочные заказы</a>
+        </li>
         <li>
           <a href="#about" class="menu-link waves-effect waves-light">Мы предлагаем</a>
         </li>
@@ -242,7 +296,7 @@
   </div>
 
   <div id="modalOrder" class="d-none">    
-    <div id="modalOrderBody" class="d-flex align-items-center justify-content-center">
+    <div id="modalOrderBody" class="d-flex justify-content-center">
       <img id="closeOrder" src="img/close.png" alt="Закрыть">
       <form id="formModalZapros">
         <div>
@@ -254,10 +308,31 @@
             <input type="tel" id="phoneModal" class="form-control" name="phone" placeholder="Телефон">
           </div>
           <div class="mb-3">
-            <input type="text" id="tonnageModal" class="form-control" name="tonnage" placeholder="Грузоподъемность">
+            <select id="tonnageModal" name="tonnage" class="form-control">
+              <option value="0">Грузоподъемность</option>
+              <option value="до 1 тонны">до 1 тонны</option>
+              <option value="до 1-5 тонн">до 1-5 тонн</option>
+              <option value="до 3 тонн">до 3 тонн</option>
+              <option value="до 5 тонн">до 5 тонн</option>
+              <option value="до 7 тонн">до 7 тонн</option>
+              <option value="до 10 тонн">до 10 тонн</option>
+              <option value="до 20 тонн">до 20 тонн</option>
+            </select>  
           </div>
           <div class="mb-5">
-            <input type="text" id="typeModal" class="form-control" name="type" placeholder="Тип будки">
+            <select id="typeModal" name="type" class="form-control">
+              <option value="0">Тип будки</option>
+              <option value="Цельномет">Цельномет</option>
+              <option value="Тент (штора)">Тент (штора)</option>
+              <option value="Евротент (ворота)">Евротент (ворота)</option>
+              <option value="Промтоварная">Промтоварная</option>
+              <option value="Изотерма/сендвич">Изотерма/сендвич</option>
+              <option value="Реф (-2 до +2)">Реф (-2 до +2)</option>
+              <option value="Реф (-5 до +5)">Реф (-5 до +5)</option>
+              <option value="Реф (-10 до +10)">Реф (-10 до +10)</option>
+              <option value="Реф (-15 до +15)">Реф (-15 до +15)</option>
+              <option value="Реф (-20 до +20)">Реф (-20 до +20)</option>
+            </select>
           </div>
           <div class="mb-3 d-flex justify-content-center">
             <button type="submit" id="btnModal" class="orderButton" value="1">
@@ -273,7 +348,9 @@
             Свяжемся с вами<br>в ближайшее время
           </div>
           <img class="mb-5" src="img/ok.png" alt="Заявка отправлена!">
-          <button type="button" id="btnSave" class="orderButton">
+        </div>
+        <div class="mb-3 d-flex justify-content-center">
+          <button type="submit" id="btnSave" class="orderButton">
             OK
           </button>
         </div>    
@@ -295,31 +372,41 @@
     // Открытие меню
     document.querySelector('#openMenu').addEventListener('click', () => {
       document.querySelector('#modalMenu').classList.remove('d-none');
+      document.body.style.overflow = 'hidden';
+      document.body.addEventListener('touchmove', event => {
+        event.preventDefault();
+      },false);
     });
     document.querySelector('#closeMenu').addEventListener('click', () => {
       document.querySelector('#modalMenu').classList.add('d-none');
+      document.body.style.overflow = 'auto';
     });
     document.querySelectorAll('#modalMenuBody .menu-link').forEach(item => {
       item.addEventListener('click', () => {
         document.querySelector('#modalMenu').classList.add('d-none');
+        document.body.style.overflow = 'auto';
       });  
     });
 
     // Открытие запроса
     document.querySelector('#orderButton').addEventListener('click', () => {
       document.querySelector('#modalOrder').classList.remove('d-none');
+      document.body.style.overflow = 'hidden';
     });
     document.querySelector('#closeOrder').addEventListener('click', () => {
       document.querySelector('#modalOrder').classList.add('d-none');
+      document.body.style.overflow = 'auto';
     });
 
     // Открытие запроса в модальном окне
     document.querySelector('#orderModalButton').addEventListener('click', () => {
       document.querySelector('#modalMenu').classList.add('d-none');
       document.querySelector('#modalOrder').classList.remove('d-none');
+      document.body.style.overflow = 'hidden';
     });
     document.querySelector('#closeOrder').addEventListener('click', () => {
       document.querySelector('#modalOrder').classList.add('d-none');
+      document.body.style.overflow = 'auto';
     });
 
     // Отправка заказа
@@ -334,6 +421,7 @@
       document.querySelector('#closeOrder').classList.remove('d-none');
       document.querySelector('#orderSave').classList.add('d-none');
       document.querySelector('#modalOrder').classList.add('d-none');
+      document.body.style.overflow = 'auto';
     });
 
   </script>

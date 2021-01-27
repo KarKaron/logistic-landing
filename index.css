@@ -82,27 +82,29 @@ input {
   height: 19%;
   top: 35%;
   background: linear-gradient(92.85deg, rgba(85, 205, 191, 0.83) 4.8%, rgba(46, 129, 255, 0.71151) 48.6%, rgba(98, 56, 187, 0.88) 97.22%);
-  /* border: 0.5px solid #FFFFFF; */
+  border: 0.5px solid #FFFFFF;
   box-sizing: border-box;
   backdrop-filter: blur(4px);
   border-radius: 5px;
   z-index: 4;
 }
 
-/* #blockDown {
+#alertUp #alertUpShadow {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 94.85%;
+  bottom: -6.19%;  
   background: #1E0C53;
   filter: blur(18px);
-  position: absolute;
-  width: 35%;
-  top: 35%;
-} */
+}
 
 #alertUp div {
   font-family: SF Compact Display;
   /* font-size: 36px; */
   font-size: 2.8rem;
   text-align: center;  
-  color: #FFFFFF;
+  color: #ffffff!important;
 }
 
 #textOrder {
@@ -111,7 +113,7 @@ input {
   font-size: 2.2rem;
   /* font-size: 28px; */
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff!important;
   z-index: 2;
 }
 
@@ -122,7 +124,7 @@ input {
   font-size: 1.4rem;
   /* font-size: 20px; */
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff!important;
   z-index: 2;
 }
 
@@ -134,7 +136,7 @@ input {
   font-size: 4.0rem;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #FFFFFF;
+  color: #ffffff!important;
   z-index: 2;
 }
 
@@ -144,10 +146,10 @@ input {
 
 #orderButton,
 #orderModalButton {
-  position: absolute;
+  position: fixed;
   width: 272px;
   height: 56px;
-  top: 88%;
+  bottom: 5%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background: #FFE15F;
   border-radius: 8px;
@@ -161,6 +163,67 @@ input {
   font-family: SF Compact Display;
   font-size: 18px;
   color: #343330;
+}
+
+#fastOrders {
+  position: relative;
+  min-height: 718px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(171.8deg, #5FD9FF 44.5%, #F2F4F4 91.47%);
+  text-align: center;
+}
+
+#fastOrders h2 {
+  position: relative;
+  top: 98px;
+  /* top: 54px; */
+  font-family: SF Compact Display;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+  color: #343330;
+}
+
+#fastOrders h4 {
+  position: relative;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #343330;
+  top: 118px;
+}
+
+#fastOrdersCard {
+  position: relative;
+  top: 160px;
+}
+
+.cardOrder {
+  padding: 16px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardTitle {
+  font-family: SF Compact Display;
+  font-size: 18px;
+  line-height: 21px;
+  color: #343330;
+  text-align: left;
+  height: 42px;
+}
+
+.cardBody {
+  position: relative;
+  top: 26px;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 17px;
+  color: #343330;
+  text-align: left; 
 }
 
 #about {
@@ -242,7 +305,6 @@ input {
   height: 64px;
   width: 100%;
   background: linear-gradient(92.85deg, rgba(85, 205, 191, 0.83) 4.8%, rgba(46, 129, 255, 0.71151) 48.6%, rgba(98, 56, 187, 0.88) 97.22%);
-  border: 0.5px solid #FFFFFF;
   box-sizing: border-box;
   backdrop-filter: blur(4px);
   border-radius: 5px;
