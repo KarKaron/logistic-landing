@@ -305,15 +305,15 @@
       <img id="closeOrder" src="img/close.png" alt="Закрыть">
       <form id="formModalZapros">
         <div>
-          <h4 class="mb-4 text-center">Начни получать<br>заказы на перевозку</h4>
-          <div class="mb-3">
-            <input type="text" id="nameModal" class="form-control validate" name="name" required placeholder="Имя">
+          <h4 class="text-center" style="margin-bottom: 24px;">Начни получать<br>заказы на перевозку</h4>
+          <div>
+            <input type="text" id="nameModal" class="formControl validate" name="name" required placeholder="Имя">
           </div>
-          <div class="mb-3">
-            <input type="tel" id="phoneModal" class="form-control" name="phone" placeholder="Телефон">
+          <div>
+            <input type="tel" id="phoneModal" class="formControl validate" name="phone" required placeholder="Телефон">
           </div>
-          <div class="mb-3">
-            <select id="tonnageModal" name="tonnage" class="form-control">
+          <div>
+            <select id="tonnageModal" name="tonnage" class="formSelect">
               <option value="0">Грузоподъемность</option>
               <option value="до 1 тонны">до 1 тонны</option>
               <option value="до 1-5 тонн">до 1-5 тонн</option>
@@ -324,8 +324,8 @@
               <option value="до 20 тонн">до 20 тонн</option>
             </select>  
           </div>
-          <div class="mb-5">
-            <select id="typeModal" name="type" class="form-control">
+          <div>
+            <select id="typeModal" name="type" class="formSelect">
               <option value="0">Тип будки</option>
               <option value="Цельномет">Цельномет</option>
               <option value="Тент (штора)">Тент (штора)</option>
@@ -339,7 +339,7 @@
               <option value="Реф (-20 до +20)">Реф (-20 до +20)</option>
             </select>
           </div>
-          <div class="mb-3 d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
             <button type="submit" id="btnModal" class="orderButton" value="1">
               ПОЛУЧИТЬ ЗАКАЗ
             </button>

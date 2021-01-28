@@ -53,11 +53,12 @@
   }
 
   #partners {
-    min-height: 1200px;
+    min-height: 1200px!important;
   }
 
   #workBaner div {
-    font-size: 20px!important;
+    font-size: 18px!important;
+    line-height: 21px!important;
   }
 
 }
@@ -124,9 +125,9 @@
     text-align: center!important;
   }
   
-  footer div {
-    padding: 50px 0 140px 0;
-  }
+  /* footer div {
+    padding: 50px 0 140px 0!important;
+  } */
 
   h2 {
     font-size: 28px!important;
