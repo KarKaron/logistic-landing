@@ -32,6 +32,14 @@
   margin: 0 auto;
 }
 
+#formModalZapros h4 {
+  margin-top: 22px;
+}
+
+#orderSave h4 {
+  margin-top: 102px;
+}
+
 #modalMenuBody ul {
   margin-top: 321px;
 }

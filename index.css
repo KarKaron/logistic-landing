@@ -78,8 +78,10 @@ input {
 
 #alertUp {
   position: absolute;
-  width: 32rem;
-  height: 19%;
+  /* width: 32rem;
+  height: 19%; */
+  padding: 24px 30px;
+  box-sizing: border-box;
   top: 35%;
   background: linear-gradient(92.85deg, rgba(85, 205, 191, 0.83) 4.8%, rgba(46, 129, 255, 0.71151) 48.6%, rgba(98, 56, 187, 0.88) 97.22%);
   border: 0.5px solid #FFFFFF;
@@ -196,15 +198,23 @@ input {
 }
 
 #fastOrdersCard {
-  position: relative;
-  top: 160px;
+  margin: 160px auto 0 auto;
+  padding-bottom: 110px;
+  max-width: 740px;
+}
+
+#fastOrdersCard .owl-stage-outer {
+  padding: 15px 0;
 }
 
 .cardOrder {
+  max-width: 350px;
+  height: 336px;
   padding: 16px;
   box-sizing: border-box;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 15px;
 }
 
 .cardTitle {
@@ -224,6 +234,15 @@ input {
   line-height: 17px;
   color: #343330;
   text-align: left; 
+}
+
+.cardBody strong {
+  font-family: SF Compact Display;
+}
+
+.cardBody a {
+  text-decoration: none;
+  color: #343330;
 }
 
 #about {

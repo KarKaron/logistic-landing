@@ -38,6 +38,12 @@
     text-align: left!important;
   }
 
+  .cardOrder {
+    width: 290px!important;
+    height: 370px!important;
+    margin: 0 auto!important;
+  }
+
   #formModalZapros {
     margin-top: 250px!important;
   }
@@ -58,10 +64,14 @@
 
 @media screen and (max-width: 550px) {
 
-  #alertUp {
+  /* #alertUp {
     width: 95%!important;
-  }
+  } */
   
+  #alertUp {
+    padding: 12px 10px!important;
+  }
+
   #alertUp div {
     font-size: 26px!important;
   }
@@ -82,16 +92,35 @@
     /* height: 100vh!important; */
   }
 
-  #contact h2 {top: 50px!important;}
+  #contact h2 {
+    top: 50px!important;
+  }
 
   #contact .container {
     padding: 0!important;
   }
 
+  #fastOrders h2 {
+    top: 54px!important;
+  }
+  
+  #fastOrders h4 {
+    top: 58px!important;
+  }
+
+  #fastOrdersCard {
+    margin-top: 74px!important;
+    padding-bottom: 0!important;
+  }
+
+  #formModalZapros {
+    margin-top: 0!important;
+  }
+
   #formModalZapros h4 {
     font-size: 28px!important;
     line-height: 33px!important;
-    margin-top: 22px!important;
+    /* margin-top: 22px!important; */
     text-align: center!important;
   }
   
@@ -122,10 +151,14 @@
     display: block!important;
   }
 
+  #orderSave {
+    margin-top: 0!important;
+  }
+
   #orderSave h4 {
     font-size: 28px!important;
     line-height: 33px!important;
-    margin-top: 102px!important;
+    /* margin-top: 102px!important; */
     text-align: center!important;
   }
 
