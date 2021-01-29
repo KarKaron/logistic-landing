@@ -15,7 +15,7 @@
     $subject = 'Новый заказ';
     $siteURL = "https://диспетчерская.su/";
     $siteNAME = "ДИСПЕТЧЕРСКАЯ.SU";
-    $siteEMAIL = "it@tkglp.ru"; //hr@tkglp.ru
+    $siteEMAIL = "hr@tkglp.ru";
     $headers  = 'MIME-Version: 1.0' . "\r\n";	     
     $headers .= "Content-type: text/html; charset=utf8 \r\n";
     $headers .= "From: it@tkglp.ru";
