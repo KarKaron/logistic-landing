@@ -203,11 +203,17 @@ td[class="spechide"]
                                   <td class="specbundle2">
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
                                       <tr>
-                                        <td align="left" valign="middle">
+                                        <td align="left" valign="middle" width="50px;">
                                           <div class="contentEditableContainer contentImageEditable">
                                             <div class="contentEditable">
-                                              <img src="<?=$siteURL?>img/android-icon-96x96.png" alt="Compagnie logo" data-default="placeholder" data-max-width="300" width="29" height="29">
-                                              <span style="color: rgba(57, 1, 121, 0.8); margin-left: 10px;"><?=$siteNAME?></span>
+                                              <img src="<?=$siteURL?>img/android-icon-96x96.png" alt="Compagnie logo" data-default="placeholder" data-max-width="300" width="29" height="29">                                              
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td align="left" valign="middle">
+                                          <div class="contentEditableContainer contentTextEditable">
+                                            <div class="contentEditable" >
+                                              <div style="color: rgba(57, 1, 121, 0.8); margin-left: 10px;"><?=$siteNAME?></div>
                                             </div>
                                           </div>
                                         </td>
