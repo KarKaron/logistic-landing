@@ -31,7 +31,7 @@ div,p,ul,h2{
 }
 
 a.link1{
-color:#698EC3;
+color: rgba(57, 1, 121, 0.8)
 font-size:13px;
 font-weight:bold;
 text-decoration:none;
@@ -178,8 +178,8 @@ td[class="spechide"]
     </script>
 
 </head>
-<body paddingwidth="0" paddingheight="0" style="background-color: #333333;padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0" class="bgBody">
-  	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent bgBody" align="center">
+<body paddingwidth="0" paddingheight="0" style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0;width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+  	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent" align="center">
       <tbody>
         <tr>
           <td>
@@ -205,9 +205,9 @@ td[class="spechide"]
                                       <tr>
                                         <td align="left" valign="middle">
                                           <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable" >
+                                            <div class="contentEditable">
                                               <img src="<?=$siteURL?>img/android-icon-96x96.png" alt="Compagnie logo" data-default="placeholder" data-max-width="300" width="29" height="29">
-                                              <?=$siteNAME?>
+                                              <span style="color: rgba(57, 1, 121, 0.8); margin-left: 10px;"><?=$siteNAME?></span>
                                             </div>
                                           </div>
                                         </td>
@@ -218,21 +218,21 @@ td[class="spechide"]
                               </table>
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
                                 <tr>
-                                  <td align="center" valign="top" style="color:#ffffff;">
+                                  <td align="center" valign="top" style="color:#000000;">
                                     <h1 style="text-transform:uppercase;"><?=$subject?></h1>    
                                   </td>
                                 </tr>
                               </table>
                             </div>
                               
-                            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+                            <!-- <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
                                 <tr>
                                   <td bgcolor="#698EC3" height="6" style="border-top-right-radius:3px;border-top-left-radius:3px;">
                                   </td>
                                 </tr>
                               </table>
-                            </div>
+                            </div> -->
                               
                             <!-- <div class="movableContent" style="border-top-right-radius:3px;border-top-left-radius:3px; padding-top: 0px; position: relative;">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
@@ -282,31 +282,15 @@ td[class="spechide"]
                                   <tr>
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
-                                        <div class="contentEditable" >
-                                          <h2 style="color:#ffffff;">Имя:</h2>
+                                        <div class="contentEditable">
+                                          <h2 style="color:#000000;">Имя:</h2>
                                         </div>
                                       </div>
                                     </td>
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2 style="color:#698EC3;"><?=$name?></h2>
-                                        </div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td valign="top">
-                                      <div class="contentEditableContainer contentTextEditable">
-                                        <div class="contentEditable" >
-                                          <h2 style="color:#ffffff;">Телефон:</h2>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td valign="top">
-                                      <div class="contentEditableContainer contentTextEditable">
-                                        <div class="contentEditable" >
-                                          <h2 style="color:#698EC3;"><?=$phone?></h2>
+                                          <h2 style="color: rgba(57, 1, 121, 0.8)"><?=$name?></h2>
                                         </div>
                                       </div>
                                     </td>
@@ -315,23 +299,14 @@ td[class="spechide"]
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2 style="color:#ffffff;">Грузоподъемность:</h2>
+                                          <h2 style="color:#000000;">Телефон:</h2>
                                         </div>
                                       </div>
                                     </td>
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2 style="color:#698EC3;"><?=$tonnage?></h2>
-                                        </div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td valign="top">
-                                      <div class="contentEditableContainer contentTextEditable">
-                                        <div class="contentEditable" >
-                                          <h2 style="color:#ffffff;">Тип будки:</h2>
+                                          <h2 style="color: rgba(57, 1, 121, 0.8)"><?=$phone?></h2>
                                         </div>
                                       </div>
                                     </td>
@@ -340,7 +315,30 @@ td[class="spechide"]
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2 style="color:#698EC3;"><?=$box?></h2>
+                                          <h2 style="color:#000000;">Грузоподъемность:</h2>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td valign="top">
+                                      <div class="contentEditableContainer contentTextEditable">
+                                        <div class="contentEditable" >
+                                          <h2 style="color: rgba(57, 1, 121, 0.8)"><?=$tonnage?></h2>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top">
+                                      <div class="contentEditableContainer contentTextEditable">
+                                        <div class="contentEditable" >
+                                          <h2 style="color:#000000;">Тип будки:</h2>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td valign="top">
+                                      <div class="contentEditableContainer contentTextEditable">
+                                        <div class="contentEditable" >
+                                          <h2 style="color: rgba(57, 1, 121, 0.8)"><?=$box?></h2>
                                         </div>
                                       </div>
                                     </td>
