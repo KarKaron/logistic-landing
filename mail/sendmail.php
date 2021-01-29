@@ -18,7 +18,7 @@
     $siteEMAIL = "it@tkglp.ru"; //hr@tkglp.ru
     $headers  = 'MIME-Version: 1.0' . "\r\n";	     
     $headers .= "Content-type: text/html; charset=utf8 \r\n";
-    $headers .= "From: ".$siteNAME."\r\n";
+    $headers .= "From: it@tkglp.ru \r\n";
     //$headers .= "Reply-To: ".$email."\r\n";
     //ob_start(); // включаем буферизацию
     //require 'templatemail.php'; // подключаем шаблон письма
