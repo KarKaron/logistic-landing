@@ -203,16 +203,11 @@ td[class="spechide"]
                                   <td class="specbundle2">
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
                                       <tr>
-                                        <td align="left" valign="middle" width="150">
+                                        <td align="left" valign="middle">
                                           <div class="contentEditableContainer contentImageEditable">
                                             <div class="contentEditable" >
                                               <img src="<?=$siteURL?>img/android-icon-96x96.png" alt="Compagnie logo" data-default="placeholder" data-max-width="300" width="29" height="29">
-                                            </div>
-                                          </div>
-                                        </td>
-                                        <td align="right" valign="top" >
-                                          <div class="contentEditableContainer contentTextEditable" style="display:inline-block;">
-                                            <div class="contentEditable" style="color:#CCCCCC;"><?=$siteNAME?>
+                                              <?=$siteNAME?>
                                             </div>
                                           </div>
                                         </td>
@@ -239,7 +234,7 @@ td[class="spechide"]
                               </table>
                             </div>
                               
-                            <div class="movableContent" style="border-top-right-radius:3px;border-top-left-radius:3px; padding-top: 0px; position: relative;">
+                            <!-- <div class="movableContent" style="border-top-right-radius:3px;border-top-left-radius:3px; padding-top: 0px; position: relative;">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
                                 <tr>
                                   <td bgcolor="#698EC3" align="center" valign="middle">
@@ -251,9 +246,9 @@ td[class="spechide"]
                                   </td>
                                 </tr>
                               </table>
-                            </div>
+                            </div> -->
                               
-                            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+                            <!-- <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
                                 <tr>
                                   <td bgcolor="#698EC3" style="padding:20px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;" align="center">
@@ -265,7 +260,7 @@ td[class="spechide"]
                                   </td>
                                 </tr>
                               </table>
-                            </div>
+                            </div> -->
                               
                             <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
