@@ -43,9 +43,7 @@ $(function() {
     } else {
       $('#nameModal').addClass('formControlError');
       $('#phoneModal').addClass('formControlError');
-      $('.errorInput').forEach(item => {
-        item.classList.remove('d-none');
-      });
+      $('.errorInput').removeClass('d-none');
     }
   });   
 
