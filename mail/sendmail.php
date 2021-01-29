@@ -20,10 +20,10 @@
     $headers .= "Content-type: text/html; charset=utf8 \r\n";
     $headers .= "From: ".$siteNAME."\r\n";
     //$headers .= "Reply-To: ".$email."\r\n";
-    ob_start(); // включаем буферизацию
-    require 'templatemail.php'; // подключаем шаблон письма
-    $text = ob_get_clean(); // выгружаем письмо из буфера
-    //
+    //ob_start(); // включаем буферизацию
+    //require 'templatemail.php'; // подключаем шаблон письма
+    //$text = ob_get_clean(); // выгружаем письмо из буфера
+    $text = 'Проверка почты';
     mail($siteEMAIL, $subject, $text, $headers) or die("Ошибка!");
     exit();
   }
