@@ -206,7 +206,7 @@ td[class="spechide"]
                                         <td align="left" valign="middle" width="150">
                                           <div class="contentEditableContainer contentImageEditable">
                                             <div class="contentEditable" >
-                                              <img src="<?=$siteURL?>img/camera.png" alt="Compagnie logo" data-default="placeholder" data-max-width="300" width="29" height="29">
+                                              <img src="<?=$siteURL?>img/android-icon-96x96.png" alt="Compagnie logo" data-default="placeholder" data-max-width="300" width="29" height="29">
                                             </div>
                                           </div>
                                         </td>
@@ -245,7 +245,7 @@ td[class="spechide"]
                                   <td bgcolor="#698EC3" align="center" valign="middle">
                                     <div class="contentEditableContainer contentImageEditable">
                                       <div class="contentEditable" >
-                                        <img class="banner" src="<?=$siteURL?>img/bigImg.jpg" alt="featured image" data-default="placeholder" data-max-width="560" height="264" width="560" border="0">
+                                        <img class="banner" src="<?=$siteURL?>img/top.jpg" alt="featured image" data-default="placeholder" data-max-width="560" width="560" border="0">
                                       </div>
                                     </div>
                                   </td>
@@ -320,34 +320,32 @@ td[class="spechide"]
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2 style="color:#ffffff;">Почта:</h2>
+                                          <h2 style="color:#ffffff;">Грузоподъемность:</h2>
                                         </div>
                                       </div>
                                     </td>
                                     <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2>
-                                            <a style="color:#698EC3;" href="mailto:<?=$email?>"><?=$email?></a>
-                                          </h2>
+                                          <h2 style="color:#698EC3;"><?=$tonnage?></h2>
                                         </div>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td valign="top" colspan="2">
+                                    <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <h2 style="color:#ffffff;">Сообщение:</h2>
+                                          <h2 style="color:#ffffff;">Тип будки:</h2>
                                         </div>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td valign="top" colspan="2">
+                                    <td valign="top">
                                       <div class="contentEditableContainer contentTextEditable">
                                         <div class="contentEditable" >
-                                          <div style="margin:10px 0;color:#ffffff;text-align:justify;"><?=$message?></div>
+                                          <h2 style="color:#698EC3;"><?=$box?></h2>
                                         </div>
                                       </div>
                                     </td>
@@ -370,7 +368,7 @@ td[class="spechide"]
                               </table>
                             </div>
                               
-                            <div class="movableContent" style="border: 0px; padding-top: 0px; text-align:center;">
+                            <!-- <div class="movableContent" style="border: 0px; padding-top: 0px; text-align:center;">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr>
@@ -380,7 +378,7 @@ td[class="spechide"]
                                   </tr>
                                 </tbody>
                               </table>
-                            </div>
+                            </div> -->
 <!--  =========================== The footer ===========================  -->
                           </td>
                         </tr>

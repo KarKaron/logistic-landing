@@ -264,7 +264,7 @@
 
     <section>
       <div class="container-fluid p-0">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AK__70KgDFsOkJdLfTXXVvGPjZdQxadsE&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AK__70KgDFsOkJdLfTXXVvGPjZdQxadsE&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script> -->
       </div> 
     </section>
       
@@ -306,14 +306,26 @@
       <form id="formModalZapros">
         <div>
           <h4 class="text-center" style="margin-bottom: 24px;">Начни получать<br>заказы на перевозку</h4>
-          <div>
-            <input type="text" id="nameModal" class="formControl validate" name="name" required placeholder="Имя">
+          <div class="formControl">
+            <input 
+              type="text" 
+              id="nameModal" 
+              name="name" 
+              placeholder="Имя"
+            >
+            <div class="text-danger d-none errorInput">Обязательное поле для заполнения</div>
           </div>
-          <div>
-            <input type="tel" id="phoneModal" class="formControl validate" name="phone" required placeholder="Телефон">
+          <div class="formControl">
+            <input 
+              type="tel" 
+              id="phoneModal" 
+              name="phone" 
+              placeholder="Телефон"
+            >
+            <div class="text-danger d-none errorInput">Обязательное поле для заполнения</div>
           </div>
-          <div>
-            <select id="tonnageModal" name="tonnage" class="formSelect">
+          <div class="formSelect">
+            <select id="tonnageModal" name="tonnage">
               <option value="0">Грузоподъемность</option>
               <option value="до 1 тонны">до 1 тонны</option>
               <option value="до 1-5 тонн">до 1-5 тонн</option>
@@ -322,10 +334,10 @@
               <option value="до 7 тонн">до 7 тонн</option>
               <option value="до 10 тонн">до 10 тонн</option>
               <option value="до 20 тонн">до 20 тонн</option>
-            </select>  
+            </select>
           </div>
-          <div>
-            <select id="typeModal" name="type" class="formSelect">
+          <div class="formSelect">
+            <select id="typeModal" name="box">
               <option value="0">Тип будки</option>
               <option value="Цельномет">Цельномет</option>
               <option value="Тент (штора)">Тент (штора)</option>
@@ -369,6 +381,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/mdb.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/new.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/slider.js"></script>
@@ -396,6 +409,7 @@
     // Открытие запроса
     document.querySelector('#orderButton').addEventListener('click', () => {
       document.querySelector('#modalOrder').classList.remove('d-none');
+      document.querySelector('#modalOrderBody').classList.add('slideOrder');
       document.body.style.overflow = 'hidden';
     });
     document.querySelector('#closeOrder').addEventListener('click', () => {
@@ -414,13 +428,21 @@
       document.body.style.overflow = 'auto';
     });
 
-    // Отправка заказа
-    document.querySelector('#btnModal').addEventListener('click', event => {
-      event.preventDefault();
-      document.querySelector('#formModalZapros').classList.add('d-none');
-      document.querySelector('#closeOrder').classList.add('d-none');
-      document.querySelector('#orderSave').classList.remove('d-none');
+    // Проверка на правильность заполнениея полей
+    document.querySelectorAll('input').forEach(item => {
+      item.addEventListener('input', event => {
+        if (event.target.value === '') {
+          event.target.classList.add('formControlError');
+          event.target.nextElementSibling.classList.remove('d-none');
+        } else {
+          event.target.classList.remove('formControlError');
+          event.target.nextElementSibling.classList.add('d-none');
+        }
+      });
     });
+
+    // Отправка заказа
+
     document.querySelector('#orderSave').addEventListener('click', () => {
       document.querySelector('#formModalZapros').classList.remove('d-none');
       document.querySelector('#closeOrder').classList.remove('d-none');
@@ -428,6 +450,10 @@
       document.querySelector('#modalOrder').classList.add('d-none');
       document.body.style.overflow = 'auto';
     });
+
+      //block.classList.add('d-none');
+      //document.querySelector('#closeOrder').classList.add('d-none');
+      //document.querySelector('#orderSave').classList.remove('d-none');
 
   </script>
 </body>

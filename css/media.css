@@ -39,8 +39,8 @@
   }
 
   .cardOrder {
-    width: 290px!important;
-    height: 370px!important;
+    width: 350px!important;
+    height: 400px!important;
     margin: 0 auto!important;
   }
 
@@ -86,6 +86,21 @@
 
   .blockContact {
     padding: 375px 0 100px 0!important;
+  }
+
+  .cardOrder {
+    width: 290px!important;
+  }
+
+  .cardTitle {
+    font-size: 21px!important;
+    line-height: 24px!important;
+    height: 48px!important;
+  }
+
+  .cardBody {
+    font-size: 16px!important;
+    line-height: 19px!important;
   }
 
   #contact {

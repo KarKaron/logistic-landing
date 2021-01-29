@@ -206,7 +206,7 @@ header {
 
 .cardOrder {
   max-width: 450px;
-  min-height: 436px;
+  min-height: 450px;
   padding: 16px;
   box-sizing: border-box;
   background: #FFFFFF;
@@ -429,11 +429,13 @@ footer {
   justify-content: center;
 }
 
-
 .formControl {
+  margin-bottom: 24px;
+}
+
+.formControl input {
   width: 100%;
   height: 40px;
-  margin-bottom: 24px;
   padding: 12px 8px;
   background: linear-gradient(0deg, rgba(242, 242, 242, 0.4), rgba(242, 242, 242, 0.4)), #FFFFFF;
   border: 0.5px solid #BDBDBD;
@@ -442,15 +444,23 @@ footer {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.15px;
-  color: #828282;
 }
 
-#formModalZapros input::-webkit-input-placeholder,
-#formModalZapros input:-ms-input-placeholder,
-#formModalZapros input::-ms-input-placeholder,
-#formModalZapros input::placeholder { 
-  color: #000000!important;
-  font-size: 25px;
+.formControl div {
+  position: absolute;
+  left: 6%;
+  font-size: 11px;
+}
+
+.formControlError {
+  border: 0.5px solid #f00!important;
+}
+
+input::-webkit-input-placeholder,
+input:-ms-input-placeholder,
+input::-ms-input-placeholder,
+input::placeholder { 
+  color: #828282!important;
 }
 
 input, 
@@ -461,19 +471,41 @@ select:active,
   outline: none;
 }
 
+/* Стилизация SELECT */
 .formSelect {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.formSelect select {
+  display: block;
   width: 100%;
   height: 40px;
-  margin-bottom: 24px;
   padding: 0 8px;
   background: linear-gradient(0deg, rgba(242, 242, 242, 0.4), rgba(242, 242, 242, 0.4)), #FFFFFF;
   border: 0.5px solid #BDBDBD;
-  box-sizing: border-box;
   border-radius: 8px;
-  font-size: 16px;
+  -webkit-appearance: none;/* Chrome */
+  -moz-appearance: none;/* Firefox */
+  appearance: none;/* убираем дефолнтные стрелочки */
   line-height: 20px;
   letter-spacing: 0.15px;
   color: #828282;
+}
+
+.formSelect:after {
+  content: "";
+  display: block;
+  background: url(img/shevron.svg) no-repeat;
+  width: 12px;
+  height: 8px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  z-index: 1;
+  margin-top: -3px;
+  cursor: pointer;
 }
 
 @font-face {
